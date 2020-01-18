@@ -1,0 +1,68 @@
+<!--
+    This is also a small Operations
+    of mathematic in javascripts
+    Programmed by : Madad Ali
+    Date & Time: 10-01-2020
+-->
+<html>
+ <head>
+  <title>Calculator in JAVASCRIPT</title>   
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script>
+
+  function add()
+  {
+    var n1=parseInt(document.getElementById('number1').value);
+    var n2=parseInt(document.getElementById('number2').value);
+    //document.getElementById('val').innerHTML=n1+" + "+n2;
+    window.alert(n1+n2);
+      document.getElementById('result').value=n1+n2;
+  }
+  
+  function sub()
+  {
+    var n1=parseInt(document.getElementById('number1').value);
+  var n2=parseInt(document.getElementById('number2').value);
+  //document.getElementById('val').innerHTML=n1+" - "+n2;
+  window.alert(n1-n2);
+      document.getElementById('result').value=n1-n2;
+  }
+  
+  function divide()
+  {
+    var n1=parseInt(document.getElementById('number1').value);
+  var n2=parseInt(document.getElementById('number2').value);
+  //document.getElementById('val').innerHTML=n1+" / "+n2;
+  window.alert(n1/n2);
+      document.getElementById('result').value=n1/n2;
+  }
+  
+  function multiply()
+  {
+    var n1=parseInt(document.getElementById('number1').value);
+  var n2=parseInt(document.getElementById('number2').value);
+  //document.getElementById('val').innerHTML=n1+" * "+n2;
+  window.alert(n1*n2);
+      document.getElementById('result').value=n1*n2;
+  }
+  
+  </script>
+ </head>   
+<body>
+<fieldset>
+<legend>Calculator</legend>
+<input type="text" id="number1" placeholder="Enter any Number"><br><br>
+<input type="text" id="number2"  placeholder="Enter any Number"><br><br>    
+
+<button onclick="add();">Add</button> 
+<button onclick="sub();">Subtract</button> 
+<button onclick="divide();">Divide</button> 
+<button onclick="multiply();">Multiply</button>
+<br><br>
+<input type="text" id="result" placeholder="Result">  
+<p id="val">Here is result</p>
+<p id="mad">Programmed By :<span>  Madad Ali Noonari</span> </p>
+</fieldset>
+
+</body>
+</html>
